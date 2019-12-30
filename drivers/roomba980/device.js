@@ -80,7 +80,7 @@ class Roomba980Device extends Homey.Device {
             return Promise.reject(new Error(Homey.__('error.spot_cleaning')));
         case 'docked':
         case 'charging':
-            return this.robot.dock();
+            return (this.robot.stop() && this.robot.dock());
         case 'stopped':
             return this.robot.stop();
         }
