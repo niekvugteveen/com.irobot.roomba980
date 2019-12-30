@@ -52,7 +52,10 @@
                 {
                     "id": "add_roomba"
                 }
-            ]
+            ],
+            "energy": {
+                "batteries": [ "INTERNAL" ]
+            }
         }
     ]
 }
